@@ -1,0 +1,26 @@
+{
+  "name": "soloangular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-route": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "node": "0.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justindoty/AngularJS-Express-JSON.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justindoty/AngularJS-Express-JSON/issues"
+  },
+  "homepage": "https://github.com/justindoty/AngularJS-Express-JSON#readme",
+  "description": ""
+}

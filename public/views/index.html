@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="olympicApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Solo Angular Challenge</title>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/views/stylesheet.css" />
+    <link rel="stylesheet" href="/vendor/animate.css" />
+    <link rel='stylesheet' href='vendor/bootstrap/dist/css/bootstrap.min.css' />
+    <script src="/vendor/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="/js/client.js"></script>
+    <base href="/"  />
+  </head>
+  <body ng-controller="OlympicController">
+    <div class="wrapper">
+
+
+    <header>
+      <img ng-src="views/teamusa.png" />
+      <h1><span>'Merica</span> Marketing Company</h1>
+      <h2>Proudly pretending to sponsor TEAM USA athletes since summer 2016</h2>
+    </header>
+    <div class="buttondiv">
+      <a class="boxingbut" href="/boxing"><button ng-click="getBoxing()">Boxing</button></a>
+      <a href="/judo"><button ng-click="getJudo()">Judo</button></a>
+      <a href="/kayak" ><button ng-click="getKayak()">Kayak</button></a>
+      <a href="/archery" ><button ng-click="getArchery()">Archery</button></a>
+      <a href="/taekwondo"><button ng-click="getTaekwondo()">Taekwondo</button></a>
+    </div>
+
+
+
+    <div class="displaySection">
+      <div ng-view>
+
+      </div>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
